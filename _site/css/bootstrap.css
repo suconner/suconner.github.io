@@ -7138,6 +7138,9 @@ td.visible-print {
 .btn-warning:hover { background-color: #7FE817; } //hover
 
 
+.horse body{
+background color: #000 !important;
+}
 
 
 
