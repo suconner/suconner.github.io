@@ -1,0 +1,13 @@
+<h3>About Me</h3>
+
+<p>Information Technology & Digital Media @ Chicago area library</p>
+<p>Veteran library professional transitioning into an information security concentration. 
+Focusing on Network Security, Malware Analysis, Digital Forensics, 
+Linux Shellcode & Cyber Law.</p> 
+
+<h3>Recent Blog Posts</h3>
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
