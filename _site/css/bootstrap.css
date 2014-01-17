@@ -327,7 +327,10 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: none;
+  transition: all 0.9s;
+-moz-transition: all 0.9s;
+-webkit-transition: all 0.9s;
 }
 
 a:focus {
@@ -678,7 +681,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  /*border-left: 5px solid #eeeeee;*/
 }
 
 blockquote p {
@@ -1339,7 +1342,7 @@ overflow-y: scroll !important;
   }
   .col-md-4 {
   background-color: #eee;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-right: 20px;
 border-left: 1px solid #e1e1e1;
 height: 100%;
@@ -7133,14 +7136,14 @@ td.visible-print {
 }
 
 
-.btn-warning { background-color: #7FE817; } //button
-
-.btn-warning:hover { background-color: #7FE817; } //hover
 
 
-.horse body{
-background color: #000 !important;
-}
+
+
+
+
+
+
 
 
 
