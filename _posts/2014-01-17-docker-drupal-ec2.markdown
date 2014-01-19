@@ -52,8 +52,8 @@ Change the <strong>Name</strong> value to Docker so that you can identify it fro
 
 Click <strong>Next Configure Security Group</strong><br>
 Select <strong>Create New Security Group</strong><br> 
-Click <strong>Add Rule</strong> and open SSH using TCP on port 22 to your ip address (will auto populate)<br>
-Click <strong>Add Rule</strong> and open HTTP using TCP on port 80 to all addresses 0.0.0.0/0<br>
+Click <strong>Add Rule</strong> and open SSH using TCP on port 22 only to your ip address (will auto populate)<br>
+Click <strong>Add Rule</strong> and open HTTP using TCP on port 80 only to your ip address (will auto populate)<br>
 Click <strong>Review and Launch</strong><br>
 Click <strong>Launch</strong>
 
@@ -86,7 +86,7 @@ $ sudo chmod 400 your_keypair_name.pem
 This makes the keypair file read-only<br>
 
 <br>
-Copy the details of the <strong>Connect</strong> dialog box into the terminal:
+Copy the details of the <strong>Connect</strong> dialog box and paste into your terminal:
 {% highlight bash %}
 $ sudo ssh -i your_keypair_name.pem ubuntu@54.200.30.10
 {% endhighlight %}
@@ -104,7 +104,13 @@ In the Terminal type:
 $ docker
 {% endhighlight %}
 
-To ensure that <strong>lxc-docker</strong> was installed
+This is a check to ensure that <strong>lxc-docker</strong> was installed and should return a list of
+Docker command options. If not, make sure that you
+selected the 64 bit LTS version of Ubuntu for your micro instance
+and that the syntax for the include was correct. To get Docker installed at this point
+you would need to follow the <u><a href="http://docs.docker.io/en/latest/installation/ubuntulinux/#ubuntu-precise-12-04-lts-64-bit">
+installation</a></u> documentation provided.
+
 
 <br>
 <p class="lead">
@@ -122,8 +128,8 @@ Pull Dockerfiles....
 </p>
 
 Github user <u><a href="https://github.com/ricardoamaro">Ricardo Amaro</a></u> has been kind enough
-to provide a DockerFile that pulls a base Ubuntu image and installs a LAMP stack, Drupal and all of its
-dependencies, Drush and configures the web server and mysql database. 
+to write a DockerFile that pulls a base Ubuntu image and installs a LAMP stack, Drupal, Drush 
+and configures the web server and mysql database. 
 <br>
 
 Do some homework and read up on <u><a href="http://docs.docker.io/en/latest/">Docker</a></u> 
@@ -152,7 +158,6 @@ $ sudo docker run -d -p 80:80 -name TEST ubuntu/drupal
 
 <code>-name TEST</code> will give the container a name so that you can call TEST instead of 
 the long string of numbers Docker uses by default. 
-<br>
 
 <br>
 Visit the public ip address that your Amazon instance is running on
@@ -178,11 +183,17 @@ $ sudo docker stop TEST
 <br>
 This command will stop the container from running. If you navigate to your Amazon instance's ip address
 you will notice that the web server is no longer running. <br>
-When you wish to continue working in your containerized environment simply execute the run command
-from a few steps ago and head back to your instance's public ip address.
+
+<br>
+When you wish to continue working in your containerized environment simply execute:
+
+{% highlight bash %}
+$ sudo docker start TEST
+{% endhighlight %}
 <br>
 
-Dont forget to shutdown your Amazon micro instance when you are all finished:<br>
+
+Dont forget to shutdown your Amazon micro instance when you are all finished so that you dont waste your uptime allowance.<br>
 If you are still in the EC2 Instances Dashboard check the box next to the instance(s) that are in a running state.<br>
 
 Click <strong>Actions</strong><br>
@@ -190,7 +201,8 @@ Under <strong>Actions</strong> click <strong>Stop</strong>
 
 <br>
 Obviously this is a very condensed tutorial and is only meant to help get you started. As you can
-see Docker is a powerful development tool that bears some serious attention.
+see Docker is a powerful development tool that bears some serious attention. You should start looking into 
+how to commit changes to your base image, automating tasks with DockerFiles and shipping your containers. 
 
 <br>
 <p class="lead">
