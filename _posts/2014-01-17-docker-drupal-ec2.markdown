@@ -190,7 +190,7 @@ Under <strong>Actions</strong> click <strong>Stop</strong>
 
 <br>
 Obviously this is a very condensed tutorial and is only meant to help get you started. As you can
-see Docker is a powerful development tool that bears some serious attention. q
+see Docker is a powerful development tool that bears some serious attention.
 
 <br>
 <p class="lead">
