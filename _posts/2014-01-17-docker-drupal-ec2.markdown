@@ -4,9 +4,9 @@ layout: post
 ---
 
 <br>
-<img src="{{ site.url }} /assets/homepage-docker-logo.png" height="150"  hspace="30"> 
-<img src="{{ site.url }} /assets/druplicon.large_.png" height="150" hspace="30">
-<img src="{{ site.url }} /assets/amazon_300.png" height="150" hspace="30">
+<a href="http://www.docker.io/"><img src="{{ site.url }} /assets/homepage-docker-logo.png" height="150"  hspace="30"></a>
+<a href="https://drupal.org/"><img src="{{ site.url }} /assets/druplicon.large_.png" height="150" hspace="30"></a>
+<a href="https://aws.amazon.com/ec2/"><img src="{{ site.url }} /assets/amazon_300.png" height="150" hspace="30"></a>
 
 <br>
 <h4>
