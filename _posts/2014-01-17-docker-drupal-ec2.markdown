@@ -192,14 +192,6 @@ $ sudo docker start TEST
 {% endhighlight %}
 <br>
 
-
-Dont forget to shutdown your Amazon micro instance when you are all finished so that you dont waste your uptime allowance.<br>
-If you are still in the EC2 Instances Dashboard check the box next to the instance(s) that are in a running state.<br>
-
-Click <strong>Actions</strong><br>
-Under <strong>Actions</strong> click <strong>Stop</strong> 
-
-<br>
 Obviously this is a very condensed tutorial and is only meant to help get you started. As you can
 see Docker is a powerful development tool that bears some serious attention. You should start looking into 
 how to commit changes to your base image, automating tasks with DockerFiles and shipping your containers. 
