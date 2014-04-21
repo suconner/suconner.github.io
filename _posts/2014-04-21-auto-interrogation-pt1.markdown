@@ -4,7 +4,7 @@ layout: post
 ---
 
 <br>
-<p class"lead">
+<p class="lead">
 This is the beginning of a multi-part series of a building block project aimed at finding the perfect set of ingredients for automating and mobilizing vulnerability research. 
 </p>
 
@@ -27,7 +27,7 @@ pt 8 Docker, Hadoop & BinaryPig for malware traffic analysis... is it even possi
 
 
 <br>
-<p class"lead">
+<p class="lead">
 pt 1 Kali Linux VirtualBox setup:
 </p>
 
@@ -36,19 +36,19 @@ In order to carry out any testing you must first install and configure the attac
 
 At this point it must be made clear that any and all testing should only be done against the localhost on the Host-only Adapter that is shared with the attacker machine. The only reason we are using NAT for the attacker machine is to pull repositories or updates. 
  
-<p class"lead">
+<p class="lead">
 Download Kali Linux iso (for this setup will be 32 bit)
 </p>
 http://www.kali.org/downloads/
 
 
 
-<p class"lead">
+<p class="lead">
 Download and install VirtualBox
 </p>
 https://www.virtualbox.org/wiki/Downloads
 
-<p class"lead">
+<p class="lead">
 Create Virtual network:
 </p>
 Open VirtualBox<br>
@@ -58,7 +58,7 @@ Click the <strong>+</strong> sign<br>
 By default this will create the vboxnet0 adapter<br>
 Click <strong>OK</strong><br>
 
-<p class"lead">
+<p class="lead">
 Create Kali Linux virtual machine
 </p>
 
@@ -70,7 +70,7 @@ Set File Size: at least 12GB (I usually shoot for around 20GB)<br>
 Click the <strong>Create Button</strong><br>
 A Kali Linux panel should have been created and now visible in your list.<br>
 
-<p class"lead">
+<p class="lead">
 Configuration:
 </p>
 Select the Kali Linux virtual machine that was just created<br>
@@ -79,7 +79,7 @@ Click the <strong>System</strong> button<br>
 Select <strong>Processor</strong><br>
 check <strong>Enable PAE/NX</strong> (your virtual machine will fail to boot otherwise)<br>
 
-<p class"lead">
+<p class="lead">
 Setup Kali’s network adapters:
 </p>
 While still in <strong>Settings</strong><br>
@@ -90,7 +90,7 @@ Set Adapter 2 attached to <strong>Host Only Adapter</strong><br>
 Under <strong>Name</strong> select <strong>vboxnet0</strong>  (recommended method for connecting multiple hosts to test or attack while segregated from the outside world)<br>
 
 
-<p class"lead">
+<p class="lead">
 Shared resources configuration:
 </p>
 While still in <strong>Settings</strong><br>
@@ -98,7 +98,7 @@ Click the <strong>General</strong> button<br>
 Select <strong>Advanced</strong><br>
 Set <strong>Shared Clipboard</strong> & <strong>Drag and Drop</strong> to <strong>Bidirectional</strong><br>
 
-<p class"lead">
+<p class="lead">
 Create a shared folder for the host machine and Kali:
 </p>
 While still in <strong>Settings</strong><br>
@@ -110,7 +110,7 @@ Check <strong>Auto-Mount</strong>box<br>
 Click <strong>OK</strong><br>
 Click <strong>OK</strong> again<br> 
 
-<p class"lead">
+<p class="lead">
 Installing Kali Linux:
 </p>
 Double click the Kali Linux panel in the VirtualBox manager list<br>
@@ -119,7 +119,7 @@ Click <strong>Start</strong><br>
 The iso image should boot to the Kali Linux install menu<br>
 Complete the installation as normal.  <br>
 
-<p class"lead">
+<p class="lead">
 Post Installation Configuration:
 </p>
 After the Kali Linux virtual machine boots successfully:<br>
