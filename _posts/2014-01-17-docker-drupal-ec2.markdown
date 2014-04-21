@@ -98,7 +98,6 @@ $ sudo ssh -i your_keypair_name.pem ubuntu@54.200.30.10
 You should now be running a shell session inside the Ubuntu Amazon Instance
 </p>
 
-
 In the Terminal type:
 {% highlight bash %}
 $ docker
