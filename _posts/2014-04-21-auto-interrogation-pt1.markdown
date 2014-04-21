@@ -31,23 +31,23 @@ pt 8 Docker, Hadoop & BinaryPig for malware traffic analysis... is it even possi
 pt 1 Kali Linux VirtualBox setup:
 </p>
 
-<br>
 In order to carry out any testing you must first install and configure the attacker machine. Detail and care should be taken as this is the one virtual machine that we will not be tearing down and rebuilding repeatedly.
 
 At this point it must be made clear that any and all testing should only be done against the localhost on the Host-only Adapter that is shared with the attacker machine. The only reason we are using NAT for the attacker machine is to pull repositories or updates. 
- 
+
+<br> 
 <p class="lead">
 Download Kali Linux iso (for this setup will be 32 bit)
 </p>
 http://www.kali.org/downloads/
 
-
-
+<br>
 <p class="lead">
 Download and install VirtualBox
 </p>
 https://www.virtualbox.org/wiki/Downloads
 
+<br>
 <p class="lead">
 Create Virtual network:
 </p>
@@ -58,6 +58,7 @@ Click the <strong>+</strong> sign<br>
 By default this will create the vboxnet0 adapter<br>
 Click <strong>OK</strong><br>
 
+<br>
 <p class="lead">
 Create Kali Linux virtual machine
 </p>
@@ -70,6 +71,7 @@ Set File Size: at least 12GB (I usually shoot for around 20GB)<br>
 Click the <strong>Create Button</strong><br>
 A Kali Linux panel should have been created and now visible in your list.<br>
 
+<br>
 <p class="lead">
 Configuration:
 </p>
@@ -79,6 +81,7 @@ Click the <strong>System</strong> button<br>
 Select <strong>Processor</strong><br>
 check <strong>Enable PAE/NX</strong> (your virtual machine will fail to boot otherwise)<br>
 
+<br>
 <p class="lead">
 Setup Kali’s network adapters:
 </p>
@@ -89,7 +92,7 @@ Click Adapter 2 and check the  <strong>Enable Network Adapter</strong> box<br>
 Set Adapter 2 attached to <strong>Host Only Adapter</strong><br>
 Under <strong>Name</strong> select <strong>vboxnet0</strong>  (recommended method for connecting multiple hosts to test or attack while segregated from the outside world)<br>
 
-
+<br>
 <p class="lead">
 Shared resources configuration:
 </p>
@@ -98,6 +101,7 @@ Click the <strong>General</strong> button<br>
 Select <strong>Advanced</strong><br>
 Set <strong>Shared Clipboard</strong> & <strong>Drag and Drop</strong> to <strong>Bidirectional</strong><br>
 
+<br>
 <p class="lead">
 Create a shared folder for the host machine and Kali:
 </p>
@@ -110,6 +114,7 @@ Check <strong>Auto-Mount</strong>box<br>
 Click <strong>OK</strong><br>
 Click <strong>OK</strong> again<br> 
 
+<br>
 <p class="lead">
 Installing Kali Linux:
 </p>
@@ -119,6 +124,7 @@ Click <strong>Start</strong><br>
 The iso image should boot to the Kali Linux install menu<br>
 Complete the installation as normal.  <br>
 
+<br>
 <p class="lead">
 Post Installation Configuration:
 </p>
@@ -134,19 +140,19 @@ deb-src http://http.kali.org/kali kali main non-free contrib
 deb http://security.kali.org/kali-security kali/updates main contrib non-free
 {% endhighlight %}
 
-
-
+<br>
 Install Linux Kernel headers:
 {% highlight bash %}
 $ apt-get update && apt-get install -y linux-headers-$(uname -r)
 {% endhighlight %}
 
-
+<br>
 Mount the VirtualBox Additions media:
 In the Virtualbox VM menu select <strong>Devices</strong><br>
 Select <strong>Insert Guest Additions CD image<strong><br>
 The image will try to Autorun, it will not work so just ignore it.<br> 
 
+<br>
 Manually install the VirtualBox Additions media:
 {% highlight bash %}
 $ cd /media/cdrom
@@ -157,13 +163,13 @@ $ ./VboxLinuxAdditions.run
 $ reboot
 {% endhighlight %}
 
-
+<br>
 Add DNS resolver:
 {% highlight bash %}
 $ echo "nameserver 8.8.8.8" > /etc/resolv.conf
 {% endhighlight %}
 
-
+<br>
 Update and Upgrade:
 {% highlight bash %}
 $ apt-get update
@@ -171,14 +177,14 @@ $ apt-get upgrade
 {% endhighlight %}
 
 
-
+<br>
 Add Host-only network adapter to interfaces file:
 {% highlight bash %}
 $ cd /etc/network/interfaces
 $ nano interfaces
 {% endhighlight %}
 
-
+<br>
 Add to the bottom of the file:
 {% highlight bash %}
 auto eth1
@@ -191,12 +197,13 @@ Ctrl x<br>
 y to save<br>
 Enter to write to the file and return to the terminal.<br>
 
+<br>
 Restart the system:
 {% highlight bash %}
 $ reboot 
 {% endhighlight %}
 
-
+<br>
 Check to make sure that both interfaces are working correctly:
 open terminal and check to make sure both eth0 and eth1 are assigned ip addresses. 
 {% highlight bash %}
