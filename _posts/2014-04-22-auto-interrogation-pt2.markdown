@@ -57,7 +57,7 @@ Think of situations where you would want others to test a super specific proof-o
 <br>
 *** While I focus on VirtualBox here, Vagrant has added support for most other virtualization platforms such as VMware and Hyper-V
 </p>
-
+<br>
 <p class="lead">
 Install Vagrant
 </p>
