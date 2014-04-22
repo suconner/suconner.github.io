@@ -37,15 +37,15 @@ At this point it must be made clear that any and all testing should only be done
 
 <br> 
 <p class="lead">
-Download Kali Linux iso (for this setup will be 32 bit)
+Download Kali Linux iso (for this setup will be 32 bit):
 </p>
-http://www.kali.org/downloads/
+<i class="fa fa-long-arrow-right"></i><a href="http://www.kali.org/downloads/">http://www.kali.org/downloads</a>
 
 <br>
 <p class="lead">
-Download and install VirtualBox
+Download and install VirtualBox:
 </p>
-https://www.virtualbox.org/wiki/Downloads
+<i class="fa fa-long-arrow-right"></i><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>
 
 <br>
 <p class="lead">
@@ -60,7 +60,7 @@ Click <strong>OK</strong><br>
 
 <br>
 <p class="lead">
-Create Kali Linux virtual machine
+Create Kali Linux virtual machine:
 </p>
 
 In VirtualBox click the <strong>New</strong> button<br>
@@ -212,3 +212,12 @@ $ ifconfig
 
 
 Next: The Quest for Automated Interrogation pt. 2: The Vagrant Pentester
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
