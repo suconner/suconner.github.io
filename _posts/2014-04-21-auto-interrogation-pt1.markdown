@@ -19,7 +19,7 @@ This is the beginning of a multi-part series of a building block project aimed a
 <h4>
 pt 1: Kali Linux VirtualBox setup<br>
 pt 2: Vagrant + The Vagrant Pentester setup<br>
-pt 3: Packer & Vagrant + Cloud Deployment <br>
+pt 3: Supplement: Packer & Vagrant Cloud Deployment <br>
 pt 4: Attacking The Vagrant Pentester<br>
 pt 5: Vagrant botnet panel (Murdering Dexter, BitBot, Ra1nx1ng Bots)<br>
 pt 6: Drupal pentesting shooting gallery with Docker<br>
