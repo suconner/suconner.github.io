@@ -3,7 +3,7 @@ title: “The Quest for Automated Interrogation pt 1”
 layout: post
 ---
 <br>
-<a href="http://www.kali.org/"><img src="{{ site.url }} /assets/kali-site-logo2.png" width="120"  hspace="30"></a>
+<a href="http://www.kali.org/"><img src="{{ site.url }} /assets/kali-site-logo2.png" width="375"  hspace="30"></a>
 <a href="https://www.virtualbox.org/"><img src="{{ site.url }} /assets/VirtualboxIcon.png" height="150" hspace="30"></a>
 
 <br>
@@ -55,10 +55,12 @@ Download and install VirtualBox:
 Create Virtual network:
 </p>
 Open VirtualBox<br>
-In the VirtualBox menu select:<br>
-VirtualBox > Preferences > Network >Host-only networks<br>
+In the VirtualBox menu select <strong>VirtualBox</strong><br>
+Select <strong>Preferences</strong><br>
+Select <strong>Network</strong> button<br>
+Select <strong>Host-only networks</strong><br>
 Click the <strong>+</strong> sign<br>
-By default this will create the vboxnet0 adapter<br>
+By default this will create the <strong>vboxnet0</strong> adapter<br>
 Click <strong>OK</strong><br>
 
 <br>
@@ -66,7 +68,7 @@ Click <strong>OK</strong><br>
 Create Kali Linux virtual machine:
 </p>
 
-In VirtualBox click the <strong>New</strong> button<br>
+In the VirtualBox Manager click the <strong>New</strong> button<br>
 Enter Name: Kali Linux<br>
 Memory size: at least 1024MB<br>
 Click the <strong>Create Button</strong><br>
@@ -113,7 +115,7 @@ Click <strong>Shared Folders</strong> button<br>
 Click the  <strong>+</strong> folder button<br>
 Under <strong>Folder Path</strong> select <strong>Other</strong> and then specify a directory on your host to use<br>
 Click <strong>Choose</strong><br>
-Check <strong>Auto-Mount</strong>box<br>
+Check <strong>Auto-Mount</strong> box<br>
 Click <strong>OK</strong><br>
 Click <strong>OK</strong> again<br> 
 
@@ -132,9 +134,11 @@ Complete the installation as normal.  <br>
 Post Installation Configuration:
 </p>
 After the Kali Linux virtual machine boots successfully:<br>
-Open up the Terminal and enter: <br>
-$ cd /etc/apt
+Open up the Terminal and enter:
+{% highlight bash %}
+$ cd /etc/apt<br>
 $ nano sources.list
+{% endhighlight %}
 
 Add the following to the sources file or Virtualbox Additions will not work
 {% highlight bash %}
@@ -150,9 +154,9 @@ $ apt-get update && apt-get install -y linux-headers-$(uname -r)
 {% endhighlight %}
 
 <br>
-Mount the VirtualBox Additions media:
+Mount the VirtualBox Additions media:<br>
 In the Virtualbox VM menu select <strong>Devices</strong><br>
-Select <strong>Insert Guest Additions CD image<strong><br>
+Select <strong>Insert Guest Additions CD image</strong><br>
 The image will try to Autorun, it will not work so just ignore it.<br> 
 
 <br>
