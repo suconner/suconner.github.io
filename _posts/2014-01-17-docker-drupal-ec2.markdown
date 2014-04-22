@@ -199,3 +199,9 @@ how to commit changes to your base image, automating tasks with DockerFiles and 
 <p class="lead">
 The rest is up to you!
 </p>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>

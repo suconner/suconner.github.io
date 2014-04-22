@@ -39,13 +39,13 @@ At this point it must be made clear that any and all testing should only be done
 <p class="lead">
 Download Kali Linux iso (for this setup will be 32 bit):
 </p>
-<i class="fa fa-long-arrow-right"></i><a href="http://www.kali.org/downloads/">http://www.kali.org/downloads</a>
+<i class="fa fa-long-arrow-right"></i><a href="http://www.kali.org/downloads/"> http://www.kali.org/downloads</a>
 
 <br>
 <p class="lead">
 Download and install VirtualBox:
 </p>
-<i class="fa fa-long-arrow-right"></i><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>
+<i class="fa fa-long-arrow-right"></i><a href="https://www.virtualbox.org/wiki/Downloads"> https://www.virtualbox.org/wiki/Downloads</a>
 
 <br>
 <p class="lead">
@@ -210,8 +210,10 @@ open terminal and check to make sure both eth0 and eth1 are assigned ip addresse
 $ ifconfig
 {% endhighlight %}
 
-
+<br>
+<br>
 Next: The Quest for Automated Interrogation pt. 2: The Vagrant Pentester
+<hr>
 <br>
 <br>
 <br>
