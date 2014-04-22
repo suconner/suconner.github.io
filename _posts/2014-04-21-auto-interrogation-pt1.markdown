@@ -199,7 +199,7 @@ iface eth1 inet dhcp
 {% endhighlight %}
 
 
-when finished type:
+when finished type:<br>
 Ctrl x<br>
 y to save<br>
 Enter to write to the file and return to the terminal.<br>
