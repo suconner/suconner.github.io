@@ -19,7 +19,7 @@ This is part two of a multi-part series of a building block project aimed at fin
 <h4>
 pt 1: Kali Linux VirtualBox setup<br>
 pt 2: Vagrant + The Vagrant Pentester setup<br>
-pt 3: Supplement: Packer & Vagrant <br>
+pt 3: Heartbleed with Docker, Packer & Vagrant<br>
 pt 4: Attacking The Vagrant Pentester<br>
 pt 5: Vagrant botnet panel (Murdering Dexter, BitBot, Ra1nx1ng Bots)<br>
 pt 6: Drupal pentesting shooting gallery with Docker<br>
@@ -197,7 +197,7 @@ $ vagrant package --base vagrant-pentester_default_1397852517894_35688 --vagrant
 How this works is, during <strong>vagrant init</strong> or any other command for that matter, Vagrant looks in a series of a paths for a Vagrantfile to use. It executes a merge on all the Vagrant files configuration settings as it moves along. Now, you may get a little confused when you open up the Vagrantfile that is created in the root of your directory during <strong>vagrant init</strong> because it will just be the plain vanilla default file. If you dig a little deeper you can find the Vagrantfile that was copied into the box during creation. 
 <br>
 {% highlight bash %}
-$cd ~/.vagrant.d/boxes/my_new_box/0/virtualbox/include/_Vagrantfile
+$ cd ~/.vagrant.d/boxes/my_new_box/0/virtualbox/include/_Vagrantfile
 {% endhighlight %}
 </p>
 
@@ -384,7 +384,7 @@ If you get locked out for entering the wrong password close the browser complete
 
 <br>
 <br>
-Next: The Quest for Automated Interrogation pt. 3: Supplement: Packer & Vagrant Cloud Deployment
+Next: The Quest for Automated Interrogation pt. 3: Heartbleed with Docker, Packer & Vagrant
 <hr>
 <br>
 <br>
