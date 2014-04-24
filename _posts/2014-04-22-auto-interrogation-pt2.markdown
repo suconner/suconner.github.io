@@ -19,7 +19,7 @@ This is part two of a multi-part series of a building block project aimed at fin
 <h4>
 pt 1: Kali Linux VirtualBox setup<br>
 pt 2: Vagrant + The Vagrant Pentester setup<br>
-pt 3: Heartbleed with Docker, Packer & Vagrant<br>
+pt 3: Heartbleed with Docker & Packer<br>
 pt 4: Attacking The Vagrant Pentester<br>
 pt 5: Vagrant botnet panel (Murdering Dexter, BitBot, Ra1nx1ng Bots)<br>
 pt 6: Drupal pentesting shooting gallery with Docker<br>
@@ -33,7 +33,7 @@ pt 8: Docker, Hadoop & BinaryPig for malware traffic analysis... is it even poss
 pt 2 Vagrant + The Vagrant Pentester setup
 </p>
 <br>
-Concisely, Vagrant acts a virtualization management tool that allows you to create, configure, destroy and rebuild virtual machines in minutes. At its core are Vagrantfiles which are written in Ruby and handle the configuration of the machine with the help of provisioners of which could be Puppet, Chef, Docker, Salt or Bash.
+Concisely, Vagrant acts a virtualization management tool that allows you to create, configure, destroy and rebuild virtual machines in minutes. At its core are Vagrantfiles which are syntactically Ruby and handle the configuration of the machine with the help of provisioners of which could be Puppet, Chef, Docker, Salt or Bash.
 <br>
 
 Please read up on Vagrant here: <i class="fa fa-long-arrow-right"></i><a href="http://www.vagrantup.com/"> http://www.vagrantup.com/</a>
@@ -384,7 +384,7 @@ If you get locked out for entering the wrong password close the browser complete
 
 <br>
 <br>
-Next: The Quest for Automated Interrogation pt. 3: Heartbleed with Docker, Packer & Vagrant
+Next: The Quest for Automated Interrogation pt. 3: Heartbleed with Docker & Packer
 <hr>
 <br>
 <br>
