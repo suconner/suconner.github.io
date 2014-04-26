@@ -56,8 +56,9 @@ You may be wondering after you realized how easy it was using Vagrant to pull an
  ourselves wrote it we probably can't consider it trusted for certain cases. When working on a project with some 
  level of criticality you may need to create a virtual machine from scratch and depend on your Puppet manifets or 
  Chef Cookbooks. Packer automates this with its simple to construct templates where you can  specify a source 
- path to pull an iso and its checksums from a trusted mirror of Ubuntu, OpenSuse etc. Then boot commands that 
- can specify preseed files to fully automate the installation. Combine this with  provisioners that fire off 
+ path to pull an iso and its checksums from a trusted mirror of Ubuntu, OpenSuse etc. Once the iso is loaded boot commands defined
+ in the template are triggered and handle the initial launch and configuration of the operating system. If provided a preseed file
+will be executed to fully automate the installation from A to Z. Combine this with  provisioners that fire off 
  custom shell scripts and you now have a powerful, trusted development tool that requires no user intervention 
  and can be shipped off to any development environment.
 </p>
