@@ -288,6 +288,7 @@ Start by exiting msfconsole (simply type 'exit') and then stop the currently run
 $ docker ps
 # note the container ID
 $ docker stop b5ee3b134fe7
+# replace 'b5ee3b134fe7' with your container ID
 $ docker run -i -t  andrewmichaelsmith/docker-heartbleed:latest  /bin/bash
 {% endhighlight %}
 
