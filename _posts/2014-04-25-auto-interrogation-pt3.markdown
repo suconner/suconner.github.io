@@ -274,9 +274,8 @@ $ exploit
 {% endhighlight %}
 
 <p>
-After hitting exploit you should be presented with 65,551 bytes of <strong>random</strong>leaked data. Everytime 
-you run the scanner it will dump a new set of leaked data. The key point here is that this is not an exploit but merely a scanner
-that tests the remote server for the vulnerability and returns random data from memory.
+After hitting exploit you should be presented with 65,551 bytes of <strong>random</strong> leaked data from the server's memory. Everytime 
+you run the scanner it will dump a new chunk of random leaked data. 
 
 <br>
 <img src="{{ site.url }} /assets/hbleed.png">
@@ -308,7 +307,7 @@ $ docker run -d andrewmichaelsmith/docker-heartbleed
 
 Then start up the Metasploit console and run the exploit again to see what sort info you can find and see if you can
 spot parts of the key or any other interesting data in the dump. Odds are that because the scanner is giving you random chunks of
-data you wont find much, but its still interesting enough to look. 
+data you may not find much, but its still interesting enough to look. 
 
 So there you have it, a pretty simple and cute proof of concept combining continuous management tools and infosec. 
 While i used the Heartbleed example here the goal of this Packer template ultimately is to provide Docker alongside Metasploit 
