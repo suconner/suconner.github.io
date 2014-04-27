@@ -324,9 +324,3 @@ Next: The Quest for Automated Interrogation pt. 4: Attacking The Vagrant Pentest
 <br>
 <br>
 <br>
-
-  
-
-
-
-
