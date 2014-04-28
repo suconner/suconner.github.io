@@ -33,7 +33,7 @@ pt 8: Docker, Hadoop & BinaryPig for malware traffic analysis... is it even poss
 pt 2 Vagrant + The Vagrant Pentester setup
 </p>
 <br>
-Concisely, Vagrant acts a virtualization management tool that allows you to create, configure, destroy and rebuild virtual machines in minutes. At its core are Vagrantfiles which are syntactically Ruby and handle the configuration of the machine with the help of provisioners of which could be Puppet, Chef, Docker, Salt or Bash.
+Concisely, Vagrant acts as a virtualization management tool that allows you to create, configure, destroy and rebuild virtual machines in minutes. At its core are Vagrantfiles which are syntactically Ruby and handle the configuration of the machine with the help of provisioners of which could be Puppet, Chef, Docker, Salt or Bash.
 <br>
 
 Please read up on Vagrant here: <i class="fa fa-long-arrow-right"></i><a href="http://www.vagrantup.com/"> http://www.vagrantup.com/</a>
@@ -51,7 +51,7 @@ Current Vagrant Base Box repositories can be found at:
 
 <p>
 While you can pull a base box and launch a virtual machine of any type, one of the biggest strengths of Vagrant (at least within the scope of this project) is its ability to turn any VirtualBox machine into a base box quite effortlessly. 
-Its definitely important for a web developer, sysadmin or security researcher to be able to launch a pre-configured environment and concentrate on their essential duties, but i also see a huge benefit in being able to make quick and dirty snapshots of the machines in different phases to export and share with others. 
+Its definitely important for a web developer, sysadmin or security researcher to be able to launch a pre-configured environment and concentrate on their essential duties, but I also see a huge benefit in being able to make quick and dirty snapshots of the machines in different phases to export and share with others. 
 Think of situations where you would want others to test a super specific proof-of-concept or master a penetration test of a critical asset prior to an actual red team exercise.
 <br>
 <br>
